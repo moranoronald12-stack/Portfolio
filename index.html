@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Visionary Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #f5f7ff; color: #222; padding: 40px 20px; }
+
+    .container { max-width: 1200px; margin: auto; text-align: center; }
+
+    h1 { font-size: 36px; margin-bottom: 10px; animation: fadeDown 1s ease; }
+    .subtitle { color: #4a63ff; font-weight: 600; margin-bottom: 30px; animation: fadeUp 1.2s ease; }
+
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
+
+    .card {
+      background: #fff;
+      padding: 25px 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: 0.4s;
+      animation: zoomIn 0.8s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(135deg, #4a63ff, #6bd4ff);
+      opacity: 0.07;
+    }
+
+    .card:hover { transform: translateY(-10px) scale(1.03); }
+
+    .avatar {
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      border: 4px solid #4a63ff;
+      margin: 0 auto 15px;
+      overflow: hidden;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+    h3 { font-size: 18px; margin-bottom: 3px; }
+    small { color: #4a63ff; font-weight: 600; }
+    p { font-size: 13px; margin: 12px 0; color: #555; }
+
+    .info { font-size: 12px; text-align: left; padding-top: 10px; }
+
+    .info span { display: block; }
+
+    
+    @keyframes fadeDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes zoomIn { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Meet Our Visionary Team</h1>
+    <div class="subtitle">Our Journey and Commitment</div>
+
+    <div class="team-grid">
+
+      <div class="card">
+        <div class="avatar"><img src="https://i.imgur.com/4ZQZQZ0.png"></div>
+        <h3>John Vincent Perez</h3>
+        <small>Team Leader</small>
+        <p>Focused on strategic direction and technological innovation for future solutions.</p>
+        <div class="info">
+          <span>Age: 19</span>
+          <span>Email: example@gmail.com</span>
+          <span>Contact: example</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="avatar"><img src="https://i.imgur.com/4ZQZQZ0.png"></div>
+        <h3>Joper Cano</h3>
+        <small>Senior Developer</small>
+        <p>Leads the development of scalable and efficient systems.</p>
+        <div class="info">
+          <span>Age: 21</span>
+          <span>Email: example@gmail.com</span>
+          <span>Contact: example </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="avatar"><img src="https://i.imgur.com/4ZQZQZ0.png"></div>
+        <h3>Ronald Morano</h3>
+        <small>Assistant Developer</small>
+        <p>Supports the main development and testing workflow.</p>
+        <div class="info">
+          <span>Age: 19</span>
+          <span>Email: example@gmail.com</span>
+          <span>Contact: example</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="avatar"><img src="https://i.imgur.com/4ZQZQZ0.png"></div>
+        <h3>Daryl Alcantara</h3>
+        <small>Assistant Developer</small>
+        <p>Handles debugging and documentation for system stability.</p>
+        <div class="info">
+          <span>Age: 20</span>
+          <span>Email: example@gmail.com</span>
+          <span>Contact: example</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="avatar"><img src="https://i.imgur.com/4ZQZQZ0.png"></div>
+        <h3>Santos, John Mark</h3>
+        <small>Along Oca Malapitan</small>
+        <p>Focused on UI optimization and performance improvements.</p>
+        <div class="info">
+          <span>Age: 20</span>
+          <span>Email: example@gmail.com</span>
+          <span>Contact: example</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="avatar"><img src="https://i.imgur.com/4ZQZQZ0.png"></div>
+        <h3>Along Oca Malapitan</h3>
+        <small>Assistant Developer</small>
+        <p>Manages data, backend logic, and security processes.</p>
+        <div class="info">
+          <span>Age: 20</span>
+          <span>Email: example@gmail.com</span>
+          <span>Contact: example</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="avatar"><img src="https://i.imgur.com/4ZQZQZ0.png"></div>
+        <h3>Along Oca Malapitan</h3>
+        <small>Assistant Developer</small>
+        <p>Specialist in front-end animations and creative layouts.</p>
+        <div class="info">
+          <span>Age: 20</span>
+          <span>Email: example@gmail.com</span>
+          <span>Contact: example</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
